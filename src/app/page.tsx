@@ -1,48 +1,13 @@
 import { Button } from "@/components/Button";
+import { Container } from "@/components/Container";
 import { FeatureCard } from "@/components/FeatureCard";
 import { Navbar } from "@/components/Navbar";
+import { Section } from "@/components/Section";
 
-const workflowSteps = [
-  {
-    description: "Turn scattered ambitions into clear goals with context.",
-    title: "Capture goals",
-  },
-  {
-    description: "Convert each goal into repeatable routines, projects, and tasks.",
-    title: "Generate systems",
-  },
-  {
-    description: "Focus each day on the next actions that matter most.",
-    title: "Execute daily",
-  },
-  {
-    description: "Use progress signals to adapt priorities and improve the system.",
-    title: "Improve continuously",
-  },
-];
-
-const features = [
-  {
-    description:
-      "Translate goals into structured plans that evolve as your priorities change.",
-    title: "AI Planning",
-  },
-  {
-    description:
-      "Prioritize work by energy, urgency, context, and the systems it supports.",
-    title: "Smart Tasks",
-  },
-  {
-    description:
-      "Connect habits, projects, milestones, and routines to long-term outcomes.",
-    title: "Goal Systems",
-  },
-  {
-    description:
-      "See momentum across goals and identify where execution needs attention.",
-    title: "Progress Tracking",
-  },
-];
+import {
+  features,
+  workflowSteps,
+} from "@/features/landing/content";
 
 export default function Home() {
   return (
@@ -112,12 +77,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-zinc-200 bg-zinc-50 px-6 py-20 dark:border-zinc-800 dark:bg-zinc-950/60 lg:px-8">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+     <Section variant="muted">
+     <Container className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
               The problem
-            </p>
+            </p>  
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-950 dark:text-white sm:text-4xl">
               Productivity apps store tasks. They rarely create systems.
             </h2>
@@ -134,11 +99,11 @@ export default function Home() {
               title="They do not create systems"
             />
           </div>
-        </div>
-      </section>
+      </Container>
+      </Section>
 
-      <section className="px-6 py-20 lg:px-8" id="vision">
-        <div className="mx-auto max-w-7xl">
+     <Section id="vision">
+       <Container>
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
               How LifeOS works
@@ -166,14 +131,11 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+              </Container>
+      </Section>
 
-      <section
-        className="border-t border-zinc-200 bg-zinc-50 px-6 py-20 dark:border-zinc-800 dark:bg-zinc-950/60 lg:px-8"
-        id="features"
-      >
-        <div className="mx-auto max-w-7xl">
+      <Section variant="muted" id="features">
+        <Container>
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
@@ -197,11 +159,11 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
-      </section>
+     </Container>
+</Section>
 
-      <section className="px-6 py-20 lg:px-8" id="roadmap">
-        <div className="mx-auto max-w-4xl text-center">
+     <Section id="roadmap">
+       <Container className="max-w-4xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
             Roadmap
           </p>
@@ -214,9 +176,9 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <Button href="#">Build Your System</Button>
-          </div>
-        </div>
-      </section>
+                  </div>
+        </Container>
+      </Section>
     </main>
   );
 }
