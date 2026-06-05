@@ -7,7 +7,7 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <a href="#" className="flex items-center gap-3" aria-label={`${siteConfig.name} home`}>
           <span className="flex size-9 items-center justify-center rounded-xl bg-zinc-950 text-sm font-bold text-white dark:bg-white dark:text-zinc-950">
-            L
+            {siteConfig.name[0]}
           </span>
 
           <span className="text-base font-semibold tracking-tight text-zinc-950 dark:text-white">
