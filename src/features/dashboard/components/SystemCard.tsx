@@ -1,9 +1,8 @@
-import type { SystemMetric } from "@/features/dashboard/data/dashboard-data";
+import type { SystemMetric } from "@/features/dashboard/types/dashboard.types";
 
 type SystemCardProps = {
   system: SystemMetric;
 };
-
 
 export function SystemCard({ system }: SystemCardProps) {
   return (

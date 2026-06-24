@@ -1,9 +1,8 @@
-import type { DailyFocusData } from "@/features/dashboard/data/dashboard-data";
+import type { DailyFocusData } from "@/features/dashboard/types/dashboard.types";
 
 type DailyFocusProps = {
   focus: DailyFocusData;
 };
-
 
 export function DailyFocus({ focus }: DailyFocusProps) {
   return (

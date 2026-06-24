@@ -1,5 +1,5 @@
 import { SystemCard } from "@/features/dashboard/components/SystemCard";
-import type { SystemMetric } from "@/features/dashboard/data/dashboard-data";
+import type { SystemMetric } from "@/features/dashboard/types/dashboard.types";
 
 type SystemOverviewProps = {
   systems: SystemMetric[];

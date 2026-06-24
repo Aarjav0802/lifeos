@@ -1,8 +1,8 @@
 import { PriorityItem } from "@/features/dashboard/components/PriorityItem";
-import type { Priority } from "@/features/dashboard/data/dashboard-data";
+import type { DashboardPriority } from "@/features/dashboard/types/dashboard.types";
 
 type PriorityListProps = {
-  priorities: Priority[];
+  priorities: DashboardPriority[];
 };
 
 export function PriorityList({ priorities }: PriorityListProps) {
